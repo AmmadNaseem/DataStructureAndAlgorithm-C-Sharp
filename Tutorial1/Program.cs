@@ -1,15 +1,34 @@
-﻿//==============Binary Trees====================== 
+﻿
+////===============Bubble Sort==================
 
-using Tutorial1.BinarySearchTree;
+//using Tutorial1.SortingAlgos;
 
-BinarySearchTree bst=new BinarySearchTree();
-bst.Insert(7,"Squirtle" );
-bst.Insert(23, "Ekans");
-bst.Insert(151, "Mew");
-bst.Insert(4 ,"Charmander");
-bst.Insert(1, "Bulbasaur");
+//BubbleSort bs=new BubbleSort();
+//int[] unsortArray=new int[] {50,0,1,25,53,2,5,6,3};
+//bs.SortArray(unsortArray);
 
-Console.WriteLine(bst.Find(151));
+//int[] unsortedArray = { 5, 2, 8, 4, 9, 1 };
+//int[] sortedArray = bs.PerforBubbleSort(unsortedArray);
+
+//// Print the sorted array
+//Console.Write("\nSorted array: ");
+//for (int i = 0; i < sortedArray.Length; i++)
+//{
+//    Console.Write(sortedArray[i] + " ");
+//}
+
+////==============Binary Trees====================== 
+
+//using Tutorial1.BinarySearchTree;
+
+//BinarySearchTree bst=new BinarySearchTree();
+//bst.Insert(7,"Squirtle" );
+//bst.Insert(23, "Ekans");
+//bst.Insert(151, "Mew");
+//bst.Insert(4 ,"Charmander");
+//bst.Insert(1, "Bulbasaur");
+
+//Console.WriteLine(bst.Find(151));
 
 
 
