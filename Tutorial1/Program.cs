@@ -1,6 +1,17 @@
 ﻿//===============Hash Tables============
 
+using Tutorial1.HashTable;
 
+HashTable hashTable=new HashTable();
+hashTable.Set("ammad","032832232");
+hashTable.Set("test", "7327834");
+hashTable.Set("mike", "34242342");
+hashTable.Set("john", "6576575656");
+
+Console.WriteLine(hashTable.Get("ammad"));
+Console.WriteLine(hashTable.Get("test"));
+Console.WriteLine(hashTable.Get("mike"));
+Console.WriteLine(hashTable.Get("john"));
 
 ////==============Tree Traversal===========
 //using Tutorial1.BinarySearchTree;
