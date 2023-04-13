@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Tutorial1.LinkedList;
 
 namespace Tutorial1.BinarySearchTree
 {
@@ -13,6 +14,83 @@ namespace Tutorial1.BinarySearchTree
         public void Insert(int key,string value) {
             Root = InsertItem(Root,key,value);
         }
+
+        //========================= IN ORDER TRAVERSAL===================   
+        public void PrintInOrderTraversal()
+        {
+            InOrderTraversal(Root);
+        }
+
+        private void InOrderTraversal(TreeNode node)
+        {
+            if (node !=null)
+            {
+                InOrderTraversal(node.LeftChild);
+                Console.WriteLine(node.Key+ " " +node.Value);   
+                InOrderTraversal(node.RightChild);
+            }
+
+        }
+
+        //=======================PRE- ORDER TRAVERSAL==============
+        public void PrintPreOrderTraversal()
+        {
+            PreOrderTraversal(Root);
+        }
+
+        private void PreOrderTraversal(TreeNode node)
+        {
+            if (node != null)
+            {
+                Console.WriteLine(node.Key + " " + node.Value);
+                PreOrderTraversal(node.LeftChild);
+                PreOrderTraversal(node.RightChild);
+            }
+
+        }
+
+        //=======================POST- ORDER TRAVERSAL==============
+        public void PrintPostOrderTraversal()
+        {
+            PostOrderTraversal(Root);
+        }
+
+        private void PostOrderTraversal(TreeNode node)
+        {
+            if (node != null)
+            {
+                PostOrderTraversal(node.LeftChild);
+                PostOrderTraversal(node.RightChild);
+                Console.WriteLine(node.Key + " " + node.Value);
+
+            }
+
+        }
+
+        //================print trees===============
+        public void PrintRandomNodes(TreeNode node)
+        {
+      
+            if (node == null) return;
+
+            // Print the current node's value
+            Console.Write(node.Key+ " "+ node.Value + "\n ");
+
+            // Randomly traverse the left and right subtrees
+            Random rand = new Random();
+            if (rand.Next(2) == 0)
+            {
+                PrintRandomNodes(node.LeftChild);
+                PrintRandomNodes(node.RightChild);
+            }
+            else
+            {
+                PrintRandomNodes(node.RightChild);
+                PrintRandomNodes(node.LeftChild);
+            }
+        }
+
+
 
         public TreeNode InsertItem(TreeNode node,int key,string value) {
 

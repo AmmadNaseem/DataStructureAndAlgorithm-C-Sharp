@@ -1,8 +1,38 @@
-﻿//=========Recusion=========
-using Tutorial1.Recursion;
+﻿//===============Hash Tables============
 
-Recursion rec=new Recursion();
-Console.WriteLine(rec.RecurstiveFactorial(5));
+
+
+////==============Tree Traversal===========
+//using Tutorial1.BinarySearchTree;
+
+//BinarySearchTree bst = new BinarySearchTree();
+//bst.Insert(7, "squirtle");
+//bst.Insert(23, "ekans");
+//bst.Insert(151, "mew");
+//bst.Insert(4, "charmander");
+//bst.Insert(1, "bulbasaur");
+
+//Console.WriteLine("\n**********Binary search Tree***********");
+//bst.PrintRandomNodes(bst.Root);
+
+
+//Console.WriteLine("\n**********In Order Traversal(L,Node,R)***********");
+//bst.PrintInOrderTraversal();
+
+//Console.WriteLine("\n**********Pre Order Traversal(Node,L,R)***********");
+//bst.PrintPreOrderTraversal();
+
+//Console.WriteLine("\n**********Post Order Traversal(L,R,Node)***********");
+//bst.PrintPostOrderTraversal();
+
+
+
+
+////=========Recusion=========
+//using Tutorial1.Recursion;
+
+//Recursion rec=new Recursion();
+//Console.WriteLine(rec.RecurstiveFactorial(5));
 
 
 ////===============Bubble Sort==================
