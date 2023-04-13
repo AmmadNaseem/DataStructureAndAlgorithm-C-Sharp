@@ -1,4 +1,10 @@
-﻿
+﻿//=========Recusion=========
+using Tutorial1.Recursion;
+
+Recursion rec=new Recursion();
+Console.WriteLine(rec.RecurstiveFactorial(5));
+
+
 ////===============Bubble Sort==================
 
 //using Tutorial1.SortingAlgos;
